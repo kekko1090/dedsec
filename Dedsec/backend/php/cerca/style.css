@@ -1,0 +1,235 @@
+.img-cerca{
+    position: absolute;
+    top: 5%;
+    left: 43%;
+}
+.id{
+    background-color: rgb(37, 37, 37);
+        color: #d00415;
+        text-align: center;
+        border: 0;
+        border-radius: 15px;
+        padding: 1% 2.7%;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+.data{
+    background-color: rgb(37, 37, 37);
+        color: #ffffff;
+        text-align: center;
+        border: 0;
+        border-radius: 15px;
+        padding: 1.3% 4%;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+.titolo{
+    background-color: rgb(37, 37, 37);
+        color: #d00415;
+        text-align: center;
+        border: 0;
+        border-radius: 15px;
+        padding: 1% 2.6%;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+.user{
+    background-color: rgb(37, 37, 37);
+        color: #d00415;
+        text-align: center;
+        border: 0;
+        border-radius: 15px;
+        padding: 1% 2.6%;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+.categoria-label{
+    color:white;
+    position: absolute;
+    top: 59%;
+    left: 45%;
+}
+.categoria{
+    background-color: rgb(37, 37, 37);
+        color: #d00415;
+        border: 0;
+        border-radius: 15px;
+        padding: 1% 1.5%;
+    position: absolute;
+    top: 62%;
+    left: 45%;
+}
+.cerca{
+    position: absolute;
+    top: 74%;
+    left: 45%;
+    color: black;
+    background-color: #a1010e;
+    border: 0;
+    border-radius: 15px;
+    padding: 1.6% 6%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 0;
+}
+.cerca:hover{
+    position: absolute;
+    top: 74%;
+    left: 45%;
+    background-color: #000000;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    padding: 1.6% 6%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 0;
+    animation: pulse-login 2s infinite;
+}
+  @keyframes pulse-login {
+      0% {
+        box-shadow: 0 0 0 0 #d00415;
+      }
+  
+      70% {
+        box-shadow: 0 0 0 10px #5f030b;
+      }
+    }
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #F8F8F8;
+        color:black;
+        font-family: 'Roboto Mono', monospace;
+    }
+    
+    
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    
+    th, td {
+        text-align: left;
+        padding: 12px 20px;
+    }
+    
+    th {
+        background-color: #74040b;
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    
+    tr {
+        color: white;
+        background-color: rgb(22, 22, 22);
+        
+    }
+    
+    .no-results {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 24px;
+        color: #555;
+    }
+    .id-{
+        color: white;
+    }
+    .body2 {
+        background-color: #000;
+        color: #fff;
+        font-family: 'Roboto Mono', monospace;
+      }
+    .tabella{
+        position: absolute;
+        top: 20%;
+    }
+    
+    .img-f{
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .img-logo{
+      position: absolute;
+      top: 4%;
+      left: 2%;
+      transform: translate(-50%, -50%);
+      border-radius: 20px;
+    }
+    .nav-b{
+        padding: 2.7% 14%;
+        background-color: rgb(37, 37, 37);
+        margin: 0 auto;
+      }
+    .search{
+        position: absolute;
+        top: 5%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+      }
+    
+      .button-s{
+        background-color: rgb(22, 22, 22);
+        color: white;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: 0 0 1px #5f030b;
+        font-size: 30px;
+      }
+      .button-s:hover{
+        background-color: rgb(22, 22, 22);
+        color: #d00415;
+        border: 0;
+        box-shadow: 0 0 10px #5f030b;
+      }
+      
+    .modifica{
+        color: #d00415;
+        border: 0;
+        box-shadow: 0 0 10px #555;
+        border-radius: 90%;
+        position: absolute;
+        top: 0.3%;
+        left: 93%;
+    }
+    .modifica:hover{
+        color: #d00415;
+        border: 0;
+        box-shadow: 0 0 10px #5f030b;
+        border-radius: 90%;
+        position: absolute;
+        top: 0.3%;
+        left: 93%;
+    }
+    .dett{
+        color: #7a1018;
+    }
+    .dett:hover{
+        color: #d00415;
+    }
+    .home{
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        border: solid white 1px;
+    }
+    .home:hover{
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        border: solid red 1px;
+    }

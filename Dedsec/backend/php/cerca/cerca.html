@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>cerca</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+        <link rel="stylesheet" href="style.css">
+        <link rel="Websait icon" type="png" href="../../../img/logo/DedSec_logo.png">
+    </head>
+    <body style="background-color: black;">
+        <a href="../../../index.html"><img src="../../../img/home.png" alt="home" class="home"></a>
+        <img  class="img-cerca" src="../../../img/cerca.png" alt="cerca">
+        <form action="cerca.php" method="post">
+            <input class="id" type="number" name="id" placeholder="id">
+
+            <input class="data" type="date"  name="data" placeholder="date">
+
+            <input class="titolo" type="text" name="titolo" placeholder="titolo">
+
+            <input class="user" type="text" name="user" placeholder="user">
+
+            <label class="categoria-label" for="categoria" required>Seleziona una categoria:</label>
+            <select class="categoria" id="categoria" name="categoria">
+                <option value="xnullx">vuoto</option>
+                <option value="Malware_e_virus">Malware e virus</option>
+                <option value="Phishing_e_social_engineering">Phishing e social engineering</option>
+                <option value="Crittografia_e_sicurezza_dei_dati">Crittografia e sicurezza dei dati</option>
+                <option value="Hacking_etico_e_pentesting">Hacking etico e pentesting</option>
+                <option value="Sicurezza_delle_reti_Wi-Fi">Sicurezza delle reti Wi-Fi</option>
+                <option value="Protezione_della_privacy_online">Protezione della privacy online</option>
+                <option value="Zero-day_exploits">Zero-day exploits</option>
+                <option value="Sicurezza_mobile">Sicurezza mobile</option>
+                <option value="Dev_in_generale">Dev in generale</option>
+            </select>
+            <button class="cerca" type="submit">cerca</button>
+        </form>
+    </body>
+</html>

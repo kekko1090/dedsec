@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="style-l/style.css">
+    <link rel="Websait icon" type="png" href="img/logo/DedSec_logo.png">
+    <script>
+        function mostra_pass() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</head>
+<body style="background-color: black;">
+    <div class="container">
+        <img class="img-l" src="../img/login.png" alt="logo">
+        <form action="php/login.php" method="POST">
+            <input class="input-u" type="text" placeholder="user" name="username" id="username" required>
+            <input class="input-p" type="password" placeholder="password" name="password" id="password" required> 
+            <div class="mostra">
+                <div class="checkbox-wrapper-64">
+                    <label class="switch">
+                    <input type="checkbox" onclick="mostra_pass()">
+                    <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+              <p class="mostra_pass">mostra password</p>
+            <button class="button-l" type="submit">login</button>
+        </form>
+        <a href="../index.html"><img src="../img/home.png" alt="home" class="home"></a>
+    </div>
+</body>
+</html>

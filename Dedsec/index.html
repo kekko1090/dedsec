@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <title>Dedsec</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Websait icon" type="png" href="img/logo/DedSec_logo.png">
+</head>
+<body style="background-color: black;">
+    <!-- 
+        Name:Dedsec
+        logo:img/logo/Dedsec_logo.png (100x100)
+    !-->
+    <div class=".container">
+        <nav class="nav-b">
+            <img class="img-logo" src="img/logo/DedSec_logo_36.png" alt="logo">
+            <img class="img-b" src="img/mr_benvenuto.png" alt="benvenuto">
+            <a href="backend/login.html"><button class="button-login" type="submit" >Login</button></a>
+            <a href="backend/register.html"><button class="button-register" type="submit" >Register</button></a>
+            <form action="#" method="get" class="search">
+                <input class="input-s" type="text" placeholder="cerca discussione">
+                <button class="button-s" type="submit">cerca</button>
+              </form>
+        </nav>
+        <div class="news">
+            <h1 style="color:#f8f8f8;text-align: center;">Ultime notizie sulla sicurezza informatica</h1> 
+            <ul id="news-list"></ul>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                //creo la funzione 
+                $(document).ready(function() {
+                    //faccio la richiesta al JSON del sito di news
+                    $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=https://thehackernews.com/feeds/posts/default?alt=rss", function(data) {
+                        //facio un output delle notizie 
+                        $.each(data.items, function(index, value) {
+                            var li = $("<li></li>");
+                            var newsItem = $("<div></div>").addClass("news-item");
+                            var img = $("<img style='border-radius:15px;'>").attr("src", value.enclosure.link);
+                            var a = $("<a class='news-a'></a>").attr("href", value.link).text(value.title);
+                            newsItem.append(img);
+                            newsItem.append(a);
+                            li.append(newsItem);
+                            $("#news-list").append(li);
+                        });
+                    });
+                });
+            </script>
+        </div>   
+        <div class="desc-p">
+            <p>
+                Benvenuti nel nostro forum di cybersecurity, un luogo in cui gli appassionati della sicurezza informatica possono incontrarsi,
+                 scambiare idee e discutere le ultime notizie e tendenze in questo campo in costante evoluzione. Qui, puoi trovare discussioni su una vasta gamma di argomenti,
+                 tra cui l'hacking etico, la protezione dei dati, la privacy online, la sicurezza delle reti, i virus informatici e molto altro ancora.
+                  I membri di questa comunità sono esperti e appassionati di sicurezza informatica provenienti da tutto il mondo,
+                  pronti ad aiutarti a risolvere i problemi di sicurezza del tuo computer o della tua rete e a condividere le loro conoscenze ed esperienze.
+                   Inoltre, il nostro forum è un luogo sicuro e accogliente dove puoi chiedere consigli senza preoccuparti di essere giudicato. Unisciti a noi per imparare,
+                    condividere e connetterti con altri appassionati di cybersecurity!
+                </p>
+        </div>   
+        <div class="social">
+            <a href="https://youtube.com"><button class="glow-on-hover" type="submit">YouTube</button></a>
+            <a href="https://twitter.com"><button class="glow-on-hover" type="submit">Twitter</button></a>
+            <a href="https://discord.com"><button class="glow-on-hover" type="submit">Discord</button></a>
+            <a href="https://web.telegram.org"><button class="glow-on-hover" type="submit">Telegram</button></a>
+        </div>
+        <div class="top-user">
+            <ul class="users">
+                <li><h1 style="color: #f8f8f8;">Ultimi users</h1></li>
+                <li><p>NetDefenderX 10s fa</p></li>
+                <li><p>KeyMasterX 20s fa</p></li>  
+                <li><p>CodeWarriorX 34s fa</p></li>
+                <li><p>HackCombatant 1m fa</p></li>
+                <li><p>NetEnforcer 1m20s fa</p></li>
+                <li><p>NetShieldPro 2m fa</p></li>
+                <li><p>CodeSentry 7m fa</p></li>
+                <li><p>CyberSentryX 10m fa</p></li>
+                <li><p>Eliot 20m fa</p></li>
+                <li><p>DataGuardX 1 ora fa</p></li>
+                <li><p>SecureCypher 1 ora 20m fa</p></li>
+                <li><p>CodeWarriorX 1 ora 40m fa</p></li>
+                <li><p>KeyDefenderX 2 ora 10m fa</p></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

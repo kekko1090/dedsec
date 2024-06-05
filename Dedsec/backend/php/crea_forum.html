@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>crea forum</title>
+    <link rel="stylesheet" href="style-c.css">
+</head>
+<body>
+    <img class="img-c" src="../../img/crea_discussione.png" alt="benvenuto">
+    <form action="crea_forum.php" method="POST">
+        <input class="titolo" type="text" name="titolo" id="titolo" placeholder="titolo..." required>
+        <br>
+        <textarea class="discussione" name="discussione" id="discussione" cols="30" rows="10" placeholder="discussione" required></textarea>
+        <br>
+        <label class="categoria-label" for="categoria" required>Seleziona una categoria:</label>
+        <select class="categoria" id="categoria" name="categoria">
+            <option value="Malware_e_virus">Malware e virus</option>
+            <option value="Phishing_e_social_engineering">Phishing e social engineering</option>
+            <option value="Crittografia_e_sicurezza_dei_dati">Crittografia e sicurezza dei dati</option>
+            <option value="Hacking_etico_e_pentesting">Hacking etico e pentesting</option>
+            <option value="Sicurezza_delle_reti_Wi-Fi">Sicurezza delle reti Wi-Fi</option>
+            <option value="Protezione_della_privacy_online">Protezione della privacy online</option>
+            <option value="Zero-day_exploits">Zero-day exploits</option>
+            <option value="Sicurezza_mobile">Sicurezza mobile</option>
+            <option value="Dev_in_generale">Dev in generale</option>
+        </select>
+        <br>
+        <button class="button-s" type="submit">send</button>
+    </form>
+    <a href="../../index.html"><img src="../../img/home.png" alt="home" class="home"></a>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.h1{
+    text-align: center;
+    position: absolute;
+    top: 1%;
+    left: 42%;
+    color: #ffffff;
+    background-color: black;
+}
+.titolo{
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    color: #d00415;
+    background-color: black;
+}
+.discussione{
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    color: #d00415;
+    background-color: black;
+}
+.categoria{
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    color: white;
+    background-color: black;
+}
+.categoria-label{
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 40.7%;
+    color: #d00415;
+    background-color: black;
+}
+.invia{
+    padding: 2% 6%;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    color: white;
+    background-color: black;
+    border: solid white 1px; 
+    border-radius: 20px;
+}
+.invia:hover{
+    padding: 2% 6%;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    color: #d00415;
+    background-color: white;
+    border: solid white 1px; 
+    box-shadow: 0 0 15px #d00415;
+    border-radius: 20px;
+}

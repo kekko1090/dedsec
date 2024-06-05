@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    color:black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+table {
+    
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 20px;
+}
+
+th {
+    background-color: #74040b;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+tr {
+    color: white;
+    background-color: rgb(22, 22, 22);
+    
+}
+
+.no-results {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+    color: #555;
+}
+.id-{
+    color: white;
+}
+.body2 {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+.img-f{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-logo{
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+.nav-b{
+    padding: 2.7% 14%;
+    background-color: rgb(37, 37, 37);
+    margin: 0 auto;
+  }
+.search{
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+
+  .button-s{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 1px #5f030b;
+    font-size: 30px;
+  }
+  .button-s:hover{
+    background-color: rgb(22, 22, 22);
+    color: #d00415;
+    border: 0;
+    box-shadow: 0 0 10px #5f030b;
+  }
+  
+.modifica{
+    color: #d00415;
+    border: 0;
+    box-shadow: 0 0 10px #555;
+    border-radius: 90%;
+    position: absolute;
+    top: 0.3%;
+    left: 93%;
+}
+.modifica:hover{
+    color: #d00415;
+    border: 0;
+    box-shadow: 0 0 10px #5f030b;
+    border-radius: 90%;
+    position: absolute;
+    top: 0.3%;
+    left: 93%;
+}
+.dett{
+    color: #7a1018;
+}
+.dett:hover{
+    color: #d00415;
+}
